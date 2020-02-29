@@ -1,0 +1,17 @@
+spring:
+  cloud:
+    config:
+      uri: http://localhost:8888
+  application:
+    name: discovery-server
+---
+eureka:
+  client:
+    fetch-registry: false
+    register-with-eureka: false
+    serviceUrl:
+          defaultZone: http://localhost:8084/eureka/
+
+
+server:
+  port: 8083
