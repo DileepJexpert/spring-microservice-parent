@@ -7,10 +7,13 @@ spring:
   devtools:
     livereload:
       enabled: true
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/DileepJexpert/spring-microservice-parent/tree/master/cloud-config-server
 
 
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:8083/eureka/
+
+
 
