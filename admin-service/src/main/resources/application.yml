@@ -1,0 +1,19 @@
+server:
+  port: 9000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8083/eureka/
+
+spring:
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+  application:
+    name: admin-service
+  security:
+    user:
+      name: dileep
+      password: dileep
